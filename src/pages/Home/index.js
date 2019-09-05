@@ -46,9 +46,9 @@ export default function Home() {
                     <strong>{product.title}</strong>
                     <span>{product.priceFormatted}</span>
 
-                    <button type='button' onClick={() => handleAddProduct(product.id)}>
+                    <button type="button" onClick={() => handleAddProduct(product.id)}>
                         <div>
-                            <MdAddShoppingCart size={16} color='#FFF' /> {amount[product.id] || 0}
+                            <MdAddShoppingCart size={16} color="#FFF" /> {amount[product.id] || 0}
                         </div>
 
                         <span>ADICIONAR AO CARRINHO</span>

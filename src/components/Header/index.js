@@ -13,16 +13,16 @@ export default function Header() {
 
     return (
         <Container>
-            <Link to='/'>
-                <img src={logo} alt='Rocketshoes' />
+            <Link to="/">
+                <img src={logo} alt="Rocketshoes" />
             </Link>
 
-            <Cart to='/cart'>
+            <Cart to="/cart">
                 <div>
                     <strong>Meu carrinho</strong>
                     <span>{cartSize} itens</span>
                 </div>
-                <MdShoppingBasket size={36} color='#FFF' />
+                <MdShoppingBasket size={36} color="#FFF" />
             </Cart>
         </Container>
     );

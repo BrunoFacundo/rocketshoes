@@ -56,12 +56,12 @@ export default function Cart() {
                             </td>
                             <td>
                                 <div>
-                                    <button type='button' onClick={() => decrement(product)}>
-                                        <MdRemoveCircleOutline size={20} color='#7159c1' />
+                                    <button type="button" onClick={() => decrement(product)}>
+                                        <MdRemoveCircleOutline size={20} color="#7159c1" />
                                     </button>
-                                    <input type='number' readOnly value={product.amount} />
-                                    <button type='button' onClick={() => increment(product)}>
-                                        <MdAddCircleOutline size={20} color='#7159c1' />
+                                    <input type="number" readOnly value={product.amount} />
+                                    <button type="button" onClick={() => increment(product)}>
+                                        <MdAddCircleOutline size={20} color="#7159c1" />
                                     </button>
                                 </div>
                             </td>
@@ -69,8 +69,8 @@ export default function Cart() {
                                 <strong>{product.subtotal}</strong>
                             </td>
                             <td>
-                                <button type='button' onClick={() => dispatch(CartActions.removeFromCart(product.id))}>
-                                    <MdDelete size={20} color='#7159c1' />
+                                <button type="button" onClick={() => dispatch(CartActions.removeFromCart(product.id))}>
+                                    <MdDelete size={20} color="#7159c1" />
                                 </button>
                             </td>
                         </tr>
@@ -79,7 +79,7 @@ export default function Cart() {
             </ProductTable>
 
             <footer>
-                <button type='button'>Finalizar pedido</button>
+                <button type="button">Finalizar pedido</button>
 
                 <Total>
                     <span>TOTAL</span>
